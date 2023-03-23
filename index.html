@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="CSS/Styles.css">
+  </head>
+  <body>  
+    <div class="container" id="box-rate">
+      <img src="images/icon-star.svg" alt="icon_star" class="star">
+
+      <h2>How did we do?</h2>
+
+      <p>Please let us know we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      
+      <div class="rate">
+        <button class="opt" onclick="select(this)" onclick="value(this)" value="1">1</button>
+        <button class="opt" onclick="select(this)" onclick="value(this)" value="2">2</button>
+        <button class="opt" onclick="select(this)" onclick="value(this)" value="3">3</button>
+        <button class="opt" onclick="select(this)" onclick="value(this)" value="4">4</button>
+        <button class="opt" onclick="select(this)" onclick="value(this)" value="5">5</button>
+      </div>
+
+      <button type="button" class="submit" onclick="submit()">SUBMIT</button>
+    </div>
+
+    <div class="container" id="error">
+      <h2>Please, select an option</h2>
+      <button type="button" class="submit" onclick="closeError()">Ok</button>
+    </div>
+
+    <div class="container" id="box-thankyou">
+      <img src="images/illustration-thank-you.svg" alt="thank you">
+
+      <p id="message"></p>
+
+      <h2>Thank you!</h2>
+
+      <p>We appreciate you tanking the time to give a rating, If you ever need more support don't hesitate to get in touch!</p>
+  </div>
+
+    <script src="JS/Script.js"></script>
+  </body>
+</html>
